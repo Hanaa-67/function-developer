@@ -13,19 +13,24 @@
     <!-- navbar -->
      <nav>
       <div class="nav-img"> <img src="./images/logo.png" alt=""></div>
+      <div class="side-bar">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
       <div>
         <ul class="navList">
-          <li ><a class="activ" href="#">HOME</a></li>
-          <li><a class="pages" href="#">PAGES <i class="fa-solid fa-xs fa-caret-down"></i></a>
+          <li ><a class="nav-link activ" href="Famms.html">HOME</a></li>
+          <li><a class="nav-link pages" href="#">PAGES <i class="fa-solid fa-xs fa-caret-down"></i></a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#"><p>About</p></a></a></li>
-              <li><a class="dropdown-item" href="#"><p>Testimonial</p></a></a></li>
+              <li><a class="dropdown-item" href="about.html"><p>About</p></a></a></li>
+              <li><a class="dropdown-item" href="Testimonial.html"><p>Testimonial</p></a></a></li>
             </ul>
           </li>
 
-          <li><a href="#">PRODUCTS</a></li>
-          <li><a href="#">BLOG</a></li>
-          <li><a href="#">CONTACT</a></li>
+          <li><a class="nav-link" href="product.html">PRODUCTS</a></li>
+          <li><a class="nav-link" href="blog.html">BLOG</a></li>
+          <li><a class="nav-link" href="contact.html">CONTACT</a></li>
           <li><a class="nav-link" href="#"><i class="fa-solid fa-cart-shopping cart"></i></a></li>
           <li><a class="nav-link" href="#"><i class="fa-solid fa-magnifying-glass cart"></i></a></li>
         </ul>
@@ -75,9 +80,9 @@
 
 
     <!-- slider -->
-    <div class="slider">
-      <div class="slider-cotent">
-          <div class="slides active">
+    <div class="slider ">
+      <div class="slider-cotent carousel">
+          <div class="slides active carousel-item">
               <h1><b>Sale 20% Off</b></h1>
               <h2><b>On Everything</b></h2>
               <p>Explicabo esse amet tempora quibusdam laudantium, laborum eaque magnam fugiat hic? 
@@ -85,7 +90,7 @@
                   veritatis delectus repellat modi impedit sequi.</p>
               <button>Shop Now</button>
           </div>
-          <div class="slides">
+          <div class="slides carousel-item">
               <h1><b>Sale 20% Off</b></h1>
               <h2><b>On Everything</b></h2>
               <p>Explicabo esse amet tempora quibusdam laudantium, laborum eaque magnam fugiat hic? 
@@ -93,7 +98,7 @@
                   veritatis delectus repellat modi impedit sequi.</p>
               <button>Shop Now</button>
           </div>
-          <div class="slides">
+          <div class="slides carousel-item">
               <h1><b>Sale 20% Off</b></h1>
               <h2><b>On Everything</b></h2>
               <p>Explicabo esse amet tempora quibusdam laudantium, laborum eaque magnam fugiat hic? 
@@ -103,9 +108,9 @@
           </div>
         </div>
         <div class="pointer">
-          <div class="point light"></div>
-          <div class="point"></div>
-          <div class="point"></div>
+          <div data-order="0" class="point light"></div>
+          <div data-order="1" class="point"></div>
+          <div data-order="2" class="point"></div>
         </div>
     </div> 
 
@@ -191,7 +196,8 @@
               et, perspiciatis, debitis totam est deserunt eius officiis ipsum ducimus ad labore modi voluptatibus 
               accusantium sapiente nam! Quaerat.</p>
            </div>
-           
+          </div> 
+          <div class="arrows">
            <div class="arrow-right">
             <i class="fa-solid fa-arrow-right fa-lg" style="color: #ffffff;"></i>
            </div>
@@ -210,9 +216,6 @@
            <p><h6 style="display: inline;">TELEPHONE:</h6>+91 987 654 3210</p>
            <p><h6 style="display: inline;">EMAIL:</h6> yourmain@gmail.com</p>
 
-           
-
-        
          </div>
          <div class="other-famms">
           <div>
@@ -235,10 +238,9 @@
           </div>
           <div>
             <h5>Newsletter</h5>
-            <p style="width: 300px;">Subscribe by our newsletter and get update protidin.</p>
+            <p class="subscribe">Subscribe by our newsletter and get update protidin.</p>
             <input type="email" placeholder="ENTER YOUR EMAIL">
-            <button>Subscribe</button>
-            
+            <button>Subscribe</button>           
           </div>
           
          </div>
