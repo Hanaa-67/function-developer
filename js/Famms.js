@@ -21,40 +21,7 @@ $('.side-bar').click(function(){
 })
 
 
-// slider 1
-function nextSlider(){
-    let activeSlide = $('.slides.active');
-    let activePoint = $('.point.light')
 
-    if(activeSlide.next().length>0){
-        activeSlide.removeClass('active')
-        activeSlide.next().addClass('active')
-        activePoint.removeClass('light');
-        activePoint.next().addClass('light')
-
-    }else{
-        activeSlide.removeClass('active')
-        $('.slides').first().addClass('active')
-        activePoint.removeClass('light')
-        $('.point').first().addClass('light')
-    }
-
-}
-
-setInterval(function(){
-    nextSlider()
-},2000) 
-
-$('.point').click(function(){
-    let order = $(this).data('order')
-    let activeSlide = $('.slides.active');
-    let activePoint = $('.point.light')
-
-    activePoint.removeClass('light');
-    $(this).addClass('light');
-    activeSlide.removeClass('active')
-    $('.slides').eq(order).addClass('active')
-})
 
 // testimonial slider
 

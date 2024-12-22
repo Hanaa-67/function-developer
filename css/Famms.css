@@ -197,7 +197,8 @@ button{
     margin-top: 3vh;
 }
 .slides{
-    display: none;
+    /* padding-left: 5vw; */
+    /* display: none; */
     /* transform: translateX(100%); */
 }
 
@@ -215,8 +216,8 @@ button{
     /* padding-top: 8vh; */
 }
 .point{
-    height: 15px;
-    width: 15px;
+    height: 15px !important;
+    width: 15px !important; 
     background-color: var(--white);
     border-radius: 50%;
     margin-left: 10px
